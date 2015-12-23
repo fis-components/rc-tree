@@ -10,5 +10,5 @@
         "object-assign": "4.x",
         "rc-animate": "2.x"
     },
-    "version": "0.12.1"
+    "version": "0.13.0"
 }
