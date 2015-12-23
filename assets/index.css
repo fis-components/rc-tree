@@ -9,6 +9,13 @@
   white-space: nowrap;
   outline: 0;
 }
+.rc-tree li ul {
+  margin: 0;
+  padding: 0 0 0 18px;
+}
+.rc-tree li ul.rc-tree-line {
+  background: url(https://t.alipayobjects.com/images/T13BtfXl0mXXXXXXXX.gif) 0 0 repeat-y;
+}
 .rc-tree li a {
   display: inline-block;
   padding: 1px 3px 0 0;
@@ -17,13 +24,6 @@
   height: 17px;
   text-decoration: none;
   vertical-align: top;
-}
-.rc-tree li ul {
-  margin: 0;
-  padding: 0 0 0 18px;
-}
-.rc-tree li ul.rc-tree-line {
-  background: url(https://t.alipayobjects.com/images/T13BtfXl0mXXXXXXXX.gif) 0 0 repeat-y;
 }
 .rc-tree li span {
   line-height: 16px;
@@ -86,6 +86,9 @@
 }
 .rc-tree li span.rc-tree-button.rc-tree-chk-disabled {
   background-position: 0 -28px;
+}
+.rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox-custom {
+  background: transparent;
 }
 .rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox_false_full {
   background-position: 0 0;
