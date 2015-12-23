@@ -106,7 +106,7 @@
 .rc-tree-treenode-disabled > a {
   color: gray;
 }
-.rc-tree-selected {
+.rc-tree-node-selected {
   background-color: #ffe6b0;
   border: 1px #ffb951 solid;
   opacity: 0.8;
