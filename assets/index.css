@@ -14,7 +14,7 @@
   padding: 0 0 0 18px;
 }
 .rc-tree li ul.rc-tree-line {
-  background: url(https://t.alipayobjects.com/images/T13BtfXl0mXXXXXXXX.gif) 0 0 repeat-y;
+  background: url("https://t.alipayobjects.com/images/T13BtfXl0mXXXXXXXX.gif") 0 0 repeat-y;
 }
 .rc-tree li a {
   display: inline-block;
@@ -97,8 +97,8 @@
   color: gray;
 }
 .rc-tree-selected {
-  background-color: #FFE6B0;
-  border: 1px #FFB951 solid;
+  background-color: #ffe6b0;
+  border: 1px #ffb951 solid;
   opacity: 0.8;
 }
 .rc-tree-icon__open {
