@@ -79,46 +79,20 @@
 .rc-tree li span.rc-tree-button.rc-tree-switcher.rc-tree-noline_close {
   background-position: -74px -72px;
 }
-.rc-tree li span.rc-tree-button.rc-tree-chk {
+.rc-tree li span.rc-tree-button.rc-tree-checkbox {
   width: 13px;
   height: 13px;
   margin: 0 3px;
-}
-.rc-tree li span.rc-tree-button.rc-tree-chk-disabled {
-  background-position: 0 -28px;
-}
-.rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox-custom {
-  background: transparent;
-}
-.rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox_false_full {
   background-position: 0 0;
 }
-.rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox_false_full_focus {
-  background-position: 0 -14px;
-}
-.rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox_false_part {
-  background-position: 0 -28px;
-}
-.rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox_false_part_focus {
-  background-position: 0 -42px;
-}
-.rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox_false_disable {
-  background-position: 0 -56px;
-}
-.rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox_true_full {
+.rc-tree li span.rc-tree-button.rc-tree-checkbox.rc-tree-checkbox-checked {
   background-position: -14px 0;
 }
-.rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox_true_full_focus {
-  background-position: -14px -14px;
-}
-.rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox_true_part {
+.rc-tree li span.rc-tree-button.rc-tree-checkbox.rc-tree-checkbox-indeterminate {
   background-position: -14px -28px;
 }
-.rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox_true_part_focus {
-  background-position: -14px -42px;
-}
-.rc-tree li span.rc-tree-button.rc-tree-chk.rc-tree-checkbox_true_disable {
-  background-position: -14px -56px;
+.rc-tree li span.rc-tree-button.rc-tree-checkbox-disabled {
+  background-position: 0 -28px !important;
 }
 .rc-tree-treenode-disabled > span,
 .rc-tree-treenode-disabled > a {
