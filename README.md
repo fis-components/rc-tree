@@ -64,14 +64,18 @@ see examples
 |multiple | whether multiple select | bool | false |
 |checkable | whether support checked | bool/React Node | false |
 |defaultExpandAll | expand all treeNodes | bool | false |
-|defaultExpandedKeys | expand specific treeNodes | String[] | false |
+|defaultExpandedKeys | expand specific treeNodes | String[] | - |
+|expandedKeys | Controlled expand specific treeNodes | String[] | - |
+|autoExpandParent | whether auto expand parent treeNodes | bool | true |
 |checkedKeys | Controlled checked treeNodes(After setting, defaultCheckedKeys will not work) | String[] | [] |
 |defaultCheckedKeys | default checked treeNodes | String[] | [] |
 |selectedKeys | Controlled selected treeNodes(After setting, defaultSelectedKeys will not work) | String[] | [] |
 |defaultSelectedKeys | default selected treeNodes | String[] | [] |
-|onCheck | click the treeNode/checkbox to fire | function(e:{checked:bool,node,checkedKeys,event,allCheckedNodes}) | - |
-|onSelect | click the treeNode to fire | function(e:{selected:bool,node,selectedKeys,event}) | - |
-|onDataLoaded | load data asynchronously and the return value should be a promise | function(node) | - |
+|onExpand | fire on treeNode expand or not | function(node, expanded, expandedKeys) | - |
+|onCheck | click the treeNode/checkbox to fire | function(e:{checked:bool, node, checkedKeys, event, allCheckedNodesKeys}) | - |
+|onSelect | click the treeNode to fire | function(e:{selected:bool, node, selectedKeys, event}) | - |
+|filterTreeNode | filter some treeNodes as you need. it should return true | function(node) | - |
+|loadData | load data asynchronously and the return value should be a promise | function(node) | - |
 |onRightClick | select current treeNode and show customized contextmenu | function({event,node}) | - |
 |onMouseEnter | call when mouse enter a treeNode | function({event,node}) | - |
 |onMouseLeave | call when mouse leave a treeNode | function({event,node}) | - |
@@ -80,7 +84,7 @@ see examples
 |onTreeDragEnter | it execs when fire the tree's dragenter event | function({event,node,expandedKeys}) | - |
 |onTreeDragOver | it execs when fire the tree's dragover event | function({event,node}) | - |
 |onTreeDragLeave | it execs when fire the tree's dragleave event | function({event,node}) | - |
-|onTreeDrop | it execs when fire the tree's drop event | function({event,node,dragNode,dragNodesKeys}) | - |
+|onTreeDrop | it execs when fire the tree's drop event | function({event, node, dragNode, dragNodesKeys}) | - |
 
 ### TreeNode props
 
@@ -88,8 +92,9 @@ see examples
 |----------|----------------|----------|--------------|
 |className | additional class to treeNode | String | '' |
 |disabled | whether disabled the treeNode | bool | false |
-|title | tree/subTree's title | String | '---' |
-|key | it's used with tree props's defaultExpandedKeys/defaultCheckedKeys/defaultSelectedKeys | String | treeNode's position |
+|disableCheckbox | whether disable the treeNode' checkbox | bool | false |
+|title | tree/subTree's title | String/node | '---' |
+|key | it's used with tree props's (default)ExpandedKeys / (default)CheckedKeys / (default)SelectedKeys. you'd better to set it, and it must be unique in the tree's all treeNodes | String | treeNode's position |
 |isLeaf | whether it's leaf node | bool | false |
 
 
