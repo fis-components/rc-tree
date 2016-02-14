@@ -6,9 +6,9 @@
     "tag": "master",
     "reposType": "npm",
     "dependencies": {
+        "classnames": "~2.2.1",
         "object-assign": "4.x",
-        "rc-animate": "2.x",
-        "rc-util": "3.x"
+        "rc-animate": "2.x"
     },
-    "version": "0.19.1"
+    "version": "1.1.0"
 }
